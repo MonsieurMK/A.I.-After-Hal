@@ -1,0 +1,256 @@
+*
+{
+	box-sizing: border-box;
+}
+
+/* Permet l'affichage de la police sur toutes les machines et navigateurs */
+@font-face
+{
+	font-family: 'Bahnschrift';
+	src:
+		url('bahnschrift.ttf')
+		format('truetype');	
+}
+
+/* Définit la largeur occupée par tout le site */
+.global
+{
+	max-width: 1200px;
+	margin: auto;
+}
+
+/* Définit l'arrière-plan et ses propriétés */
+html
+{
+	background-attachment: fixed;
+	background-image: url("progress-bar-of-system-update-process-on-computer-display-with-animated-numbers-on-blue-background-4k-video_hcv8i0bo_thumbnail-full01.png");
+}
+
+.clear
+{
+	clear: both;
+}
+
+/* Propriétés du header, comportant le logo, le titre et les menus */
+header
+{
+	background: rgba(100,100,100,0.8);
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+/* Propriétés du logo */
+.logo
+{
+	float: left;
+	margin-right: 5px;
+	margin-left: 10px;
+	margin-top: 10px;
+	margin-bottom: 5px;
+	width: 20%;
+}
+
+/* Propriétés du titre*/
+.titre
+{
+	background: rgba(22,108,165,1);
+	margin-top: 10px;
+	margin-bottom: 5px;
+	margin-left: 10px;
+	margin-right: 10px;
+	width: 77%;
+	padding: 1.4%;
+	float: left;
+	font: bold 3.2em Bahnschrift, serif;
+	color : white;
+	letter-spacing: 3px;
+	text-align: right;
+}
+
+/* Propriétés du menu */
+.menu
+{
+	background-color: #333;
+	float: left;
+	margin-top: 5px;
+	margin-bottom: 10px;
+	margin-left: 10px;
+	margin-right: 10px;
+	width: 77%;
+	padding: 0.23%;
+	font: bold 2em Bahnschrift, serif;
+	color : white;
+}
+
+/* Permet l'affichage et le fonctionnement du menu déroulant comportant les pages "Domaines-Présents" et "Domaines Futurs" */
+ul 
+{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+li
+{
+    float: left;
+}
+
+li a
+{
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover
+{
+    background-color: #111;
+}
+
+li 
+{
+	display: block;
+	transition-duration: 0.5s;
+}
+
+li:hover {
+  cursor: pointer;
+}
+
+ul li ul {
+  
+  visibility: hidden;
+  opacity: 0;
+  transition: all 0.5s ease;
+  background: rgba(255,255,255,1);
+  position: absolute;
+  display: none;
+}
+
+ul li:hover > ul,
+ul li ul:hover {
+  visibility: visible;
+  opacity: 1;
+  display: block;
+}
+
+ul li ul li {
+  clear: both;
+  width: 100%;
+}
+
+.domainesub a{
+	color: black;
+	min-width:174.5px;
+	font: 0.8em Bahnschrift, serif;
+}	
+
+.domainesub a:hover 
+{
+    background: rgba(22,108,165,1);
+	color: white;
+	font: 0.8em Bahnschrift, serif;
+}	
+
+/* Propriétés du fil d'Ariane */
+.ariane
+{
+	margin-left: auto;
+	margin-right: auto;
+	background: rgba(62,148,205,1);
+	padding: 1%;
+	font: bold 1.5em Bahnschrift, serif;
+	color : white;
+}
+
+/* Propriétés de la boîte comportant les contenu de la page */
+section
+{
+	min-height: 450px;
+	margin: 1%;
+	margin-right: auto;
+	margin-left: auto;
+	padding: 3%;
+	background: rgba(255,255,255,0.9);
+	font: 1em Bahnschrift, serif;
+	color : black;
+}
+
+/* Propriétés des polices des citations, titres et contenus des textes */
+.quotation
+{
+	font: bold 3em Bahnschrift, serif;
+	font-style: italic;
+	float: left;
+	max-width:86%;
+}
+
+.author
+{
+	font: bold 2em Bahnschrift, serif;
+	font-style: normal;
+	float: left;
+}
+
+.titreTexte
+{
+	font: bold 2.5em Bahnschrift;
+	float: left;
+}
+
+.contenu
+{
+	font: 1.2em Bahnschrift;
+}
+
+/* Propriétés de tableau*/
+table 
+{
+	width:100%;
+}
+
+table, th, td 
+{
+	border: 1px solid black;
+	border-collapse: collapse;
+}
+
+th, td 
+{
+	padding: 18px;
+	text-align: left;
+}
+
+table#t01 th 
+{
+	background-color: black;
+	color: white;
+}
+
+/*Propriétés du pied de page ainsi que les dimensions des logos de l'IUT et de l'Université */
+footer
+{
+	background: rgba(22,108,165,1);
+	min-height: 80px;
+	margin-right: auto;
+	margin-left: auto;
+	padding: 1%;
+	font: 0.8em Bahnschrift, serif;
+	color : white;
+}
+
+.logoIUT
+{
+	float: right;
+	width: 124.375px;
+}
+
+.logoUT3
+{
+	float: right;
+	width: 225px;
+}
